@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+	ul{
+	width:280px;
+	margin:0 auto;
+	}
+    li{
+	    height:50px;
+		width:55px;
+		text-align:center;
+		list-style:none;
+		float:left;
+	  }
+   .div{
+	   width:340px;
+	   height:240px;
+	   border:1px #666;
+	   display:none;
+	  }  
+	#big_image{
+		width:349px;
+		height:262px;
+		margin:0 auto;
+		}
+	.c1{
+		border:#F93 solid 1px;
+		}
+</style>
+</head>
+
+<body>
+<div id="big_image">
+<img class="div" src="img/show1_big.jpg" />
+<img class="div" src="img/show2_big.jpg" />
+<img class="div" src="img/show3_big.jpg" />
+<img class="div" src="img/show4_big.jpg" />
+<img class="div" src="img/show5_big.jpg" />
+</div>
+<ul>
+<li><img src="img/show1.jpg" /></li>
+<li><img src="img/show2.jpg" /></li>
+<li><img src="img/show3.jpg" /></li>
+<li><img src="img/show4.jpg" /></li>
+<li><img src="img/show5.jpg" /></li>
+</ul>
+<script type="text/javascript">
+var lin=document.getElementsByTagName("ul")[0].getElementsByTagName("li");
+var xtt=document.getElementById("big_image").getElementsByTagName("img");
+for(var i=0;i<lin.length;i++){
+	lin[i].index=i;//index 属性:返回下拉列表中选项的索引位置
+	lin[i].onmouseover=function(){
+		for(var j=0;j<xtt.length;j++){
+			xtt[j].style.display="none";
+			}
+       xtt[this.index].style.display="block"; 
+	   this.className="c1";
+		}
+	lin[i].onmouseout=function(){
+		this.className="";
+		}
+}
+
+</script>
+</body>
+</html>
