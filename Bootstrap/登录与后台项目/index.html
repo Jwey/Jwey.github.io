@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<style type="text/css">
+			.container{
+				margin-top:40px;
+			}
+			.form-horizontal .has-feedback .form-control-feedback{
+				left:15px;
+			}
+			.has-feedback .form-control{
+				padding-left:32.5px;
+			}
+			label.error{
+				color:red;
+			}
+			.code{
+				background: red;
+				color: white;
+				width: 40px;
+				display: inline-block;
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<form class="form-horizontal" autocomplete="off" id="login">
+				<fieldset>
+					<legend>登录</legend>
+						<div class="form-group has-feedback">
+							<label class="control-label col-sm-3 hidden-xs">账号:</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" aria-describedby="user" name="username" placeholder="请输入用户名" id="username"/>
+								<label class="sr-only" id="user"></label>
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
+							</div>
+						</div>
+					<div class="form-group has-feedback">
+						<label class="control-label col-sm-3 hidden-xs">密码:</label>
+						<div class="col-sm-4">
+							<input type="password" class="form-control" aria-describedby="pwd" name="pwd" placeholder="请输入密码" id="pwd"/>
+							<label class="sr-only"></label>
+							<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+						</div>
+					</div>
+					<div class="form-group has-feedback">
+							<label class="control-label col-sm-3 hidden-xs" for="code">验证码:</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" aria-describedby="code" data-toggle="tooltip" data-placement="top" id="input" name="code"/>
+							<label class="sr-only"></label>
+							<span class="glyphicon glyphicon-picture form-control-feedback"></span>
+						</div>
+						<div><img src="img/code.png" class="img-responsive" /></div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-1 col-sm-offset-4 col-xs-3">
+							<button type="submit" class="btn btn-default">登录</button>
+						</div>
+						<div class="col-sm-1">
+							<button type="reset" class="btn btn-default">重置</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+		<script type="text/javascript" src="js/jquery-3.3.1.js">	</script>
+		<script type="text/javascript" src="js/bootstrap.js">	</script>
+		<script type="text/javascript" src="js/jquery.validate.min.js">	</script>
+		<script type="text/javascript" src="js/login.js">	</script>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<!--顶部导航-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topMenu">
+						<i class="icon-bar"></i>
+						<i class="icon-bar"></i>
+						<i class="icon-bar"></i>
+					</button>
+					<a href="#" class="navbar-brand">LOGO</a>
+				</div>
+				<div class="collapse navbar-collapse" id="topMenu">
+					<ul class="nav navbar-nav">
+						<li><a href="#centeruser1" data-toggle="collapse"><span class="glyphicon glyphicon-user form-control-feedback hidden-lg hidden-md hidden-sm"></span>用户中心</a>
+								<div class="list-group collapse hidden-lg hidden-md" id="centeruser1">
+									<a href="#adduser1" class="list-group-item" data-toggle="tab">添加用户</a>
+									<a href="#listuser1" class="list-group-item" data-toggle="tab">用户列表</a>
+									<a href="#" class="list-group-item" data-toggle="tab">权限管理</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+								</div>	
+						</li>
+						<li><a href="#pushnews1" data-toggle="collapse"><span class="glyphicon glyphicon-cloud form-control-feedback hidden-lg hidden-md hidden-sm"></span>消息推送</a>
+								<div class="list-group collapse hidden-lg hidden-md" id="pushnews1">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+							<li><a href="#mangecontent1" data-toggle="collapse"><span class="glyphicon glyphicon-folder-open form-control-feedback hidden-lg hidden-md hidden-sm"></span>内容管理</a>
+								<div class="list-group collapse hidden-lg hidden-md" id="mangecontent1">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+							<li><a href="#datastatistics1" data-toggle="collapse"><span class="glyphicon glyphicon-tasks form-control-feedback hidden-lg hidden-md hidden-sm"></span>数据统计</a>
+								<div class="list-group collapse hidden-lg hidden-md" id="datastatistics1">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>
+							</li>
+							<li><a href="#runsmodule1" data-toggle="collapse"><span class="glyphicon glyphicon-wrench form-control-feedback hidden-lg hidden-md hidden-sm"></span>运营模块</a>
+								<div class="list-group collapse hidden-lg hidden-md" id="runsmodule1">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+							<li><a href="#systemsetting1" data-toggle="collapse"><span class="glyphicon glyphicon-cog form-control-feedback hidden-lg hidden-md hidden-sm"></span>系统设置</a>
+								<div class="list-group collapse hidden-lg hidden-md" id="systemsetting1">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+					</ul>
+					<form class="navbar-form navbar-left hidden-md">
+						<div class="input-group">
+							<input type="text" class="form-control" />
+							<span class="input-group-addon">搜索</span>
+						</div>
+					</form>
+					<p class="navbar-text">欢迎</p>
+					<p class="navbar-text navbar-right"><a href="#" class="navbar-link">登录</a></p>
+				</div>
+			</div>
+		</div>
+		<!--左侧导航-->
+		<div class="container-fluid main hidden-xs hidden-sm">
+			<div class="row">
+					<div class="col-md-2 navbar-inverse leftbar has-feedback">
+						<ul class="nav navbar">
+							<li><a href="#centeruser" data-toggle="collapse"><span class="glyphicon glyphicon-user form-control-feedback"></span>用户中心</a>
+								<div class="list-group collapse" id="centeruser">
+									<a href="#adduser" class="list-group-item" data-toggle="tab">添加用户</a>
+									<a href="#listuser" class="list-group-item" data-toggle="tab">用户列表</a>
+									<a href="#" class="list-group-item" data-toggle="tab">权限管理</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+								</div>	
+							</li>
+							<li><a href="#pushnews" data-toggle="collapse"><span class="glyphicon glyphicon-cloud form-control-feedback"></span>消息推送</a>
+								<div class="list-group collapse" id="pushnews">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+							<li><a href="#mangecontent" data-toggle="collapse"><span class="glyphicon glyphicon-folder-open form-control-feedback"></span>内容管理</a>
+								<div class="list-group collapse" id="mangecontent">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+							<li><a href="#datastatistics" data-toggle="collapse"><span class="glyphicon glyphicon-tasks form-control-feedback"></span>数据统计</a>
+								<div class="list-group collapse" id="datastatistics">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>
+							</li>
+							<li><a href="#runsmodule" data-toggle="collapse"><span class="glyphicon glyphicon-wrench form-control-feedback"></span>运营模块</a>
+								<div class="list-group collapse" id="runsmodule">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+							<li><a href="#systemsetting" data-toggle="collapse"><span class="glyphicon glyphicon-cog form-control-feedback"></span>系统设置</a>
+								<div class="list-group collapse" id="systemsetting">
+									<a href="#" class="list-group-item" data-toggle="tab">1</a>
+									<a href="#" class="list-group-item" data-toggle="tab">2</a>
+									<a href="#" class="list-group-item" data-toggle="tab">3</a>
+									<a href="#" class="list-group-item" data-toggle="tab">4</a>
+									<a href="#" class="list-group-item" data-toggle="tab">5</a>
+									<a href="#" class="list-group-item" data-toggle="tab">6</a>
+								</div>	
+							</li>
+						</ul>
+					</div>
+			<!--添加用户-->
+			<div class="col-md-9 tab-content">
+				<div class="container tab-pane" id="listuser">
+					<div class="panel panel-success">
+						<div class="panel-heading" style="background-color:#009999; color: white;">
+							<h4>用户列表</h4>
+						</div>
+						<div class="panel-body">
+							<form class="form-inline">
+								<div class="input-group">
+									<input type="text" class="form-control" />
+									<span class="input-group-addon">搜索</span>
+								</div>
+							</form>
+						</div>
+						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+									<th>用户名</th>
+									<th>用户密码</th>
+									<th>用户等级</th>
+									<th>用户权限</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="panel-footer">
+							<ul class="pagination">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					<div class="container tab-pane" id="adduser">
+						<div class="panel panel-warning">
+							<div class="panel-heading"  style="background-color:#009999; color: white;">
+								<h4>添加用户</h4>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="control-label col-sm-3">账号:</label>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3">密码:</label>
+										<div class="col-sm-3">
+										<input type="password" class="form-control" />
+										</div>
+									</div>
+								</form>
+							</div>
+	
+							<div class="panel-footer">
+								<div class="col-sm-1 col-sm-offset-3 col-xs-6">
+									<button type="submit" class="btn btn-default">确认添加</button>
+								</div>
+								<div class="col-sm-1">
+									<button type="reset" class="btn btn-default">清空数据</button>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
