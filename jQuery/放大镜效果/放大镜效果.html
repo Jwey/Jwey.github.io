@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js">
+		</script>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.smallImg,.bigImg{
+				position: absolute;
+			}
+			.bigImg{
+				width: 400px;
+				height: 400px;
+				display: none;
+				overflow: hidden;
+				left: 410px;
+				top: 0;
+			}
+			.blocks{
+				width: 100px;
+				height: 100px;
+				background: rgba(255,255,0,0.4);
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="smallImg">
+			<img src="img/small.jpg"/>
+			<div class="blocks"></div>
+		</div>
+		<div class="bigImg">
+			<img src="img/big.jpg" style="position: absolute;"/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".smallImg").on("mouseover",function(){
+				$(".blocks").css("display","block");
+				$(".bigImg").css("display","block");
+			});
+			$(".smallImg").on("mousemove",function(e){
+				var x=e.clientX
+				var y=e.clientY
+				//获取原窗口距离文档的位置
+				var sx=$(".smallImg").offset().left;
+				var sy=$(".smallImg").offset().top;
+				//获取鼠标移动的距离
+				var mx=x-sx;
+				var my=y-sy;
+				//获取小框的宽高
+				var mw=$(".blocks").width()/2
+				var mh=$(".blocks").height()/2
+				//鼠标移动后小框的移动距离
+				$(".blocks").css({
+					left:mx-mw+"px",
+					top:my-mh+"px"
+				})
+				//获取小框偏移的距离
+				var lw=$(".blocks").position().left;
+				var lh=$(".blocks").position().top;
+				//判断边界
+				var maxW=$(".smallImg").width()-$(".blocks").width();
+				var maxH=$(".smallImg").height()-$(".blocks").height();
+				//判断左边界
+				if(lw <=0){
+					$(".blocks").css("left","0px")
+				}
+				//右边界
+				if(lw >= maxW){
+					$(".blocks").css("right",maxW +"px")
+				}
+				//上边界
+				if(lh <= 0){
+					$(".blocks").css("top","0px")
+				}
+				//下边界
+				if(lh >= maxH){
+					$(".blocks").css("top",maxH +"px")
+				}
+				var newX=lw*2.5
+				var newY=lh*2.5
+				$(".bigImg img").css({
+					left:-newX + "px",
+					top:-newY + "px"
+				})
+				$(".smallImg").on("mouseout",function(){
+					$(".blocks").css("display","none")
+					$(".bigImg").css("display","none")
+				})
+			});
+		})
+	</script>
+</html>
