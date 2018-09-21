@@ -7,7 +7,7 @@ jQuery
 
   放大镜效果:https://jwey.github.io/jQuery/放大镜效果/放大镜效果.html
   
-  垃圾桶效果:https://jwey.github.io/jQuery/垃圾桶效果/index.html
+  垃圾桶效果:https://jwey.github.io/jQuery/垃圾桶/index.html
   
 Javascript
 
