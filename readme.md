@@ -24,5 +24,5 @@
 
 ## **`HTML5`**
 
-[canvas安卓机器人](http://jwey.github.io/HTML5/canvas/canvas安卓机器人.html)  
+[canvas安卓机器人](http://Jwey.github.io/HTML5/canvas/canvas安卓机器人.html)  
 
